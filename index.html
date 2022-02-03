@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+      <!-------Task5------->
+
+
+      <pre>Task 5. При клике на кнопку "Посчитать сумму" умножьте количество выбранного товара на его цену. Количество выбранного товара можно изменять при клике на кнопки "+1" и "-1".(По желанию, добавьте проверку, чтобы нельзя было выбрать меньше 0 товаров.)</pre>
+
+
+      <div class="row" id="current-cart">
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/book.jpg">
+              <span class="card-title">Product 1</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action" id="task5">
+                <span>
+                    Цена:
+                </span>
+                <span class="price">
+                    10
+                </span>
+                <br>
+                <a class="waves-effect waves-light btn">-1</a>
+                <input  class="total" type="text" style="width: 30px;" value="0">
+                <a class="waves-effect waves-light btn">+1</a>
+            </div>
+
+            
+          </div>
+          <a class="waves-effect waves-light btn" id="calculate-price">Посчитать сумму</a>
+          <div>Текущая сумма равна: <span id="current-total">0</span></div>
+        </div>
+      </div>
+
+
+      <!-------Task6------->
+
+
+      <pre>Task 6. При клике на кнопку "Посчитать сумму всех товаров" умножьте количество выбранных товаров на их сумму. Количество выбранного товара можно изменять при клике на кнопки "+1" и "-1".(По желанию, добавьте проверку, чтобы нельзя было выбрать меньше 0 товаров.)</pre>
+
+
+      <div class="row" id="current-cart-items">
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/book.jpg">
+              <span class="card-title">Product 1</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+                <span>
+                    Цена:
+                </span>
+                <span class="price">
+                    10
+                </span>
+                <br>
+                <a class="waves-effect waves-light btn" data-btn="btn-neg">-1</a>
+                <input  class="total" type="text" style="width: 30px;" value="0">
+                <a class="waves-effect waves-light btn" data-btn="btn-pos">+1</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m3">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/book.jpg">
+                <span class="card-title">Product 2</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                  <span>
+                      Цена:
+                  </span>
+                  <span class="price">
+                      10
+                  </span>
+                  <br>
+                  <a class="waves-effect waves-light btn" data-btn="btn-neg">-1</a>
+                  <input  class="total" type="text" style="width: 30px;" value="0">
+                  <a class="waves-effect waves-light btn" data-btn="btn-pos">+1</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m3">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/book.jpg">
+                <span class="card-title">Product 3</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                  <span>
+                      Цена:
+                  </span>
+                  <span class="price">
+                      10
+                  </span>
+                  <br>
+                  <a class="waves-effect waves-light btn" data-btn="btn-neg">-1</a>
+                  <input  class="total" type="text" style="width: 30px;" value="0">
+                  <a class="waves-effect waves-light btn" data-btn="btn-pos">+1</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col s12 m3">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/book.jpg">
+                <span class="card-title">Product 4</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                  <span>
+                      Цена:
+                  </span>
+                  <span class="price">
+                      10
+                  </span>
+                  <br>
+                  <a class="waves-effect waves-light btn" data-btn="btn-neg">-1</a>
+                  <input  class="total" type="text" style="width: 30px;" value="0">
+                  <a class="waves-effect waves-light btn" data-btn="btn-pos">+1</a>
+              </div>
+            </div>
+            
+            
+          </div>
+        <a class="waves-effect waves-light btn" id="calculate-all-prices">Посчитать сумму всех товаров</a>
+        <div>Текущая сумма равна: <span id="current-total-items">0</span></div>
+      </div>
+              
+
+    <!-------Task7------->
+    <pre>
+        Task7.  Дано поле ввода(input). Когда пользователь вводит текст, и нажимает клавишу Enter, нужно сделать чтобы введенный текст выводился в новый тег "p" под input, а содержимое input очищалось.
+    </pre>
+
+    <div>
+        <input type="text" name="input-info" data-length="3">
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
